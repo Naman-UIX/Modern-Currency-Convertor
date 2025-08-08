@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+
+  <div class="container">
+    <div id="rate-marquee-container">
+  <marquee id="rate-marquee" behavior="scroll" direction="left" scrollamount="5">Fetching live INR rates...</marquee>
+</div>
+    <h1>Currency Converter</h1>
+
+    <div class="box">
+      <input type="number" id="amount" placeholder="Enter amount" />
+
+      <div class="dropdowns">
+        <select id="fromCurrency">
+          <option value="USD">USD</option>
+          <option value="INR">INR</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="JPY">JPY</option>
+          <option value="AUD">AUD</option>
+        </select>
+
+        <select id="toCurrency">
+          <option value="INR">INR</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="JPY">JPY</option>
+          <option value="AUD">AUD</option>
+        </select>
+      </div>
+
+      <button id="convertBtn">Convert</button>
+      <div class="result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
